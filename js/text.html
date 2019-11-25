@@ -1,0 +1,34 @@
+<html>
+<body>
+<form id="form1" runat="server">
+<div>
+    
+<script>
+function closeWin()
+    {
+    myWindow.close()
+    }
+</script>
+
+<script>
+function openWin()
+    {
+    myWindow=window.open('','','width=500,height=300')
+    
+    myWindow.document.write("Ovo je test Prozor za funkcije Open i Close")
+    myWindow.window.blur(myWindow.document.write("adsfdsfdsfd"))
+    }
+</script>
+
+<input type=button value="Otvori prozor" onclick="openWin()" style="font-weight: bold; font-size: 14pt;
+       width: 150px; color: #000099; background-color: #ffff99" />
+        <br />
+        <br />
+        <br />
+<input type="button" value="Zatvori prozor" onclick="closeWin()" style="font-weight: bold;
+font-size: 14pt; width: 150px; color: #000099; background-color: #ffff99" />
+
+</div>
+</form>
+</body>
+</html>
